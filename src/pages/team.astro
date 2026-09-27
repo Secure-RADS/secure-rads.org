@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const description = "Meet the researchers behind Secure RADS.";
+const authors = [
+  { name: "Arwa Najdi", institution: "The University of Newcastle" },
+  { name: "Rukshan Athauda", institution: "The University of Newcastle" },
+  { name: "Ranuga Disansa", institution: "Informatics Institute of Technology" },
+  { name: "Herath Mudiyanselage Nelanga Dilum Bandara", institution: "CSIRO’s Data61" },
+  { name: "Suhuai Luo", institution: "The University of Newcastle" },
+];
+---
+
+<BaseLayout title="Team — Secure RADS" {description}>
+  <section class="page-width interior-page">
+    <p class="eyebrow">The people behind the research</p>
+    <h1>Team</h1>
+    <p class="page-intro">An interdisciplinary collaboration bringing together research in data protection, secure systems, and personal data rights.</p>
+    <div class="team-list">
+      {authors.map((author, index) => <article><span>{String(index + 1).padStart(2, "0")}</span><div><h2>{author.name}</h2><p>{author.institution}</p></div></article>)}
+    </div>
+    <p class="team-note">Author order and affiliations follow the published paper.</p>
+  </section>
+</BaseLayout>

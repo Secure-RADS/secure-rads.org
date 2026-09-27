@@ -1,0 +1,45 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/team/", label: "Team" },
+  { href: "/publications/", label: "Publications" },
+];
+const pathname = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f8f6" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <link rel="canonical" href={new URL(pathname, Astro.site)} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="research-header">
+      <div class="page-width header-inner">
+        <a href="/" class="wordmark" aria-label="Secure RADS home">SECURE <span>RADS</span></a>
+        <nav aria-label="Main navigation" class="main-nav">
+          {nav.map((item) => <a href={item.href} class:list={["nav-link", pathname === item.href && "active"]} aria-current={pathname === item.href ? "page" : undefined}>{item.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer">
+      <div class="page-width footer-inner"><span>Secure RADS</span><span>Research on secure access to personal data</span></div>
+    </footer>
+  </body>
+</html>

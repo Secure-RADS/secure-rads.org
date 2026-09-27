@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import arrowUpRight from "lucide-static/icons/arrow-up-right.svg?raw";
+const description = "Publications from the Secure RADS research project.";
+const doi = "https://doi.org/10.1145/3727166.3727190";
+---
+
+<BaseLayout title="Publications — Secure RADS" {description}>
+  <section class="page-width interior-page publications-page">
+    <p class="eyebrow">Research and writing</p>
+    <h1>Publications</h1>
+    <p class="page-intro">Work on technical approaches to data protection, secure computation, and data subject rights.</p>
+    <article class="publication-card">
+      <div class="publication-icon" aria-hidden="true">01</div>
+      <div class="publication-info">
+        <p class="publication-meta">Australasian Computer Science Week · ACSW ’25 · 2025 · pp. 40–47</p>
+        <h2>Technical Framework to Ensure Data Subject’s Rights in GDPR: A Conceptual Design</h2>
+        <p class="authors">Arwa Najdi, Rukshan Athauda, Herath Mudiyanselage Nelanga Dilum Bandara, and Suhuai Luo</p>
+        <p class="abstract">The General Data Protection Regulation grants individuals rights over their personal data, while organisations face practical challenges in supporting those rights across modern data systems. This paper presents a conceptual technical framework to support data subject rights and GDPR compliance.</p>
+        <a class="text-link" href={doi} target="_blank" rel="noreferrer">View on ACM Digital Library <span class="icon" aria-hidden="true" set:html={arrowUpRight} /></a>
+        <p class="doi">DOI: 10.1145/3727166.3727190</p>
+      </div>
+    </article>
+  </section>
+</BaseLayout>

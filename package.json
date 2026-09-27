@@ -1,0 +1,19 @@
+{
+  "name": "secure-rads-research-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "wrangler pages deploy dist --project-name secure-rads-research"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "lucide-static": "^1.48.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.141.0"
+  }
+}

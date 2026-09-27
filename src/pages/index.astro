@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import arrowDown from "lucide-static/icons/arrow-down.svg?raw";
+import arrowUpRight from "lucide-static/icons/arrow-up-right.svg?raw";
+const description = "Secure RADS explores technical approaches to supporting data subject rights and secure research under the GDPR.";
+---
+
+<BaseLayout title="Secure RADS — Data rights, by design" {description}>
+  <section class="hero page-width">
+    <div class="hero-copy">
+      <p class="eyebrow">Secure access to personal data</p>
+      <h1>Making data subject rights work in practice.</h1>
+      <p class="hero-lede">Secure RADS is a research project exploring a technical framework for exercising data subject rights under the General Data Protection Regulation.</p>
+      <div class="hero-actions"><a class="button button-dark" href="https://github.com/rukshangithub/GDPR" target="_blank" rel="noreferrer">View on GitHub <span class="icon" aria-hidden="true" set:html={arrowUpRight} /></a><a class="text-link" href="/team/">Meet the team</a></div>
+    </div>
+    <a class="scroll-cue" href="#research"><span class="icon" aria-hidden="true" set:html={arrowDown} /> Explore the research</a>
+  </section>
+  <section class="research-section" id="research">
+    <div class="page-width section-grid">
+      <div><p class="eyebrow">The research</p><h2>From legal rights to technical mechanisms.</h2></div>
+      <div class="section-copy">
+        <p>The GDPR gives people rights over their personal data. Making those rights actionable across complex data systems calls for clear responsibilities, traceable processing, and practical technical support.</p>
+        <p>Our work investigates how secure research environments can help data controllers enable analysis while keeping personal data protected and data use accountable.</p>
+        <a class="text-link" href="/publications/">Explore publications <span class="icon" aria-hidden="true" set:html={arrowUpRight} /></a>
+      </div>
+    </div>
+  </section>
+  <section class="focus-section page-width">
+    <div class="focus-heading"><p class="eyebrow">Our focus</p><h2>Rights need systems that can respond.</h2></div>
+    <div class="focus-list">
+      <article><span>01</span><h3>Data subject rights</h3><p>Understand how rights can be supported through a technical framework.</p></article>
+      <article><span>02</span><h3>Accountable data use</h3><p>Make access and computation visible to the people and authorities who need to understand it.</p></article>
+      <article><span>03</span><h3>Secure research</h3><p>Explore how protected environments can enable research without exposing raw personal data.</p></article>
+    </div>
+  </section>
+  <section class="publication-callout"><div class="page-width callout-inner">
+    <div><p class="eyebrow">Publications</p><h2>Research on data rights and secure research.</h2></div>
+    <a class="button button-light" href="/publications/">View publications <span class="icon" aria-hidden="true" set:html={arrowUpRight} /></a>
+  </div></section>
+</BaseLayout>

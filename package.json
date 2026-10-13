@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "wrangler pages deploy dist --project-name secure-rads-research"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "astro": "^7.3.5",

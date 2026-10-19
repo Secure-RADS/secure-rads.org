@@ -25,13 +25,15 @@ const pathname = Astro.url.pathname;
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png" />
     <link rel="canonical" href={new URL(pathname, Astro.site)} />
     <title>{title}</title>
   </head>
   <body>
     <header class="research-header">
       <div class="page-width header-inner">
-        <a href="/" class="wordmark" aria-label="Secure RADS home">SECURE <span>RADS</span></a>
+        <a href="/" class="wordmark" aria-label="Secure RADS home"><img src="/logo.svg" alt="" />SECURE <span>RADS</span></a>
         <nav aria-label="Main navigation" class="main-nav">
           {nav.map((item) => <a href={item.href} class:list={["nav-link", pathname === item.href && "active"]} aria-current={pathname === item.href ? "page" : undefined}>{item.label}</a>)}
         </nav>

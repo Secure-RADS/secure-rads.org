@@ -53,7 +53,8 @@ a { color: inherit; }
 .team-list h2 { margin: -5px 0 5px; font-size: 21px; font-weight: 600; letter-spacing: -.04em; }
 .team-list p { margin: 0; color: #6b6b65; font-size: 12px; }
 .team-note { margin-top: 20px; color: #707069; font: 10px monospace; }
-.publication-card { display: grid; grid-template-columns: 64px 1fr; gap: 24px; max-width: 960px; padding: 32px 0; border-top: 1px solid #c8c8c2; border-bottom: 1px solid #c8c8c2; }
+.publication-list { max-width: 960px; border-top: 1px solid #c8c8c2; }
+.publication-card { display: grid; grid-template-columns: 64px 1fr; gap: 24px; max-width: 960px; padding: 32px 0; border-bottom: 1px solid #c8c8c2; }
 .publication-icon { display: flex; width: 52px; height: 52px; align-items: center; justify-content: center; border: 1px solid #bcbcb5; font: 10px monospace; }
 .publication-meta, .doi { color: #6d6d67; font: 10px monospace; letter-spacing: .02em; }
 .publication-meta { margin: 3px 0 17px; }

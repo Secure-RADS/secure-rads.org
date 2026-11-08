@@ -1,0 +1,9 @@
+- id: gdpr-technical-framework-2025
+  year: 2025
+  venue: Australasian Computer Science Week · ACSW ’25
+  pages: pp. 40–47
+  title: "Technical Framework to Ensure Data Subject’s Rights in GDPR: A Conceptual Design"
+  authors: Arwa Najdi, Rukshan Athauda, Herath Mudiyanselage Nelanga Dilum Bandara, and Suhuai Luo
+  abstract: The General Data Protection Regulation grants individuals rights over their personal data, while organisations face practical challenges in supporting those rights across modern data systems. This paper presents a conceptual technical framework to support data subject rights and GDPR compliance.
+  doi: 10.1145/3727166.3727190
+  linkLabel: View on ACM Digital Library
